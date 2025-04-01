@@ -17,7 +17,7 @@ public class vistaBanco {
     private String telefono;
     private String direccion;
 
-    public void crea_banco() {
+    public void creaBanco() {
         this.nombre = JOptionPane.showInputDialog("Ingrese el nombre del banco");
         this.telefono = JOptionPane.showInputDialog("Ingrese el telefono del banco");
         this.direccion = JOptionPane.showInputDialog("Ingrese la direccion del banco");
@@ -45,6 +45,11 @@ public class vistaBanco {
 
     public void setDireccion(String direccion) {
         this.direccion = direccion;
+    }
+
+    @Override
+    public String toString() {
+        return "vistaBanco{" + "nombre=" + nombre + ", telefono=" + telefono + ", direccion=" + direccion + '}';
     }
     
     public void mostrarBanco(Banco banco){

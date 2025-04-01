@@ -73,5 +73,12 @@ public class cliente extends Usuario {
     public void setTarjetas(ArrayList<Tarjeta> tarjetas) {
         this.tarjetas = tarjetas;
     }
+
+    @Override
+    public String toString() {
+        return "cliente{" + "sexo=" + sexo + ", profesion=" + profesion + ", direccion=" + direccion + ", cuentas=" + cuentas + ", tarjetas=" + tarjetas + "\n" + super.toString();
+    }
+    
+    
     
 }
